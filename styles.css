@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  animation: changeBackground 10s linear infinite;
+  color: #000000;
+  overflow: hidden; /* Ensure balloons don't cause horizontal scroll */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: #FFCCCC; /* Light Pink */
+  }
+  25% {
+    background-color: #FFD700; /* Gold */
+  }
+  50% {
+    background-color: #98FB98; /* Pale Green */
+  }
+  75% {
+    background-color: #ADD8E6; /* Light Blue */
+  }
+  100% {
+    background-color: #FFB6C1; /* Light Pink */
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#birthdayMessage {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.balloon,.family {
+  width: 100px; /* Adjust the width */
+  height: 150px; /* Adjust the height */
+  position: absolute;
+  animation: float 5s infinite linear;
+}
+.birthday-image {
+  width: 100%; /* Adjust the width as needed */
+  max-height: 190px; /* Adjust the maximum height as needed */
+  margin-bottom: 20px;
+}
+.confetti1 {
+  width: 20%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+  
+}
+.confetti2 {
+  width: 20%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+ 
+}
+.dance1 {
+  width: 20%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+  
+}
+.dance2 {
+  width: 20%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+  
+}
+.dance3 {
+  width: 20%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+  
+}
+.dance4 {
+  width: 80%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+  
+}
+ .dance5 {
+  width: 20%; /* Adjust the width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  position: absolute;
+  
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#balloon1 { top: 10px; left: 50px; }
+#balloon2 { top: 15px; left: 200px; }
+#balloon3 { top: 60px; left: 350px; }
+#balloon4 { top: 10px; right: 50px; }
+#balloon5 { top: 15px; right: 200px; }
+#balloon6 { top: 60px; right: 350px; }
+#family2 { top: 100px; left: 50px; }
+#family3 { top: 150px; left: 200px; }
+#family4 { top: 200px; left: 350px; }
+#family5 { top: 100px; right: 50px; }
+#family6 { top: 150px; right: 200px; }
+#family1 { top: 200px; right: 350px; }
+#confetti1 { right: 0px; }
+  #confetti2 { left: 0px; }
+  #dance1 { bottom: 10px; left: 30%; transform: translateX(-50%); }
+  #dance2 { bottom: 30px; left: 70%; transform: translateX(-50%); }
+  #dance3 { bottom: 50px; left: 90%; transform: translateX(-50%); }
+  #dance4 { bottom: 0px; left: 50%; transform: translateX(-50%); }
+  #dance5 { bottom: 20px; left: 10%; transform: translateX(-50%); }
